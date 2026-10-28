@@ -1,0 +1,52 @@
+{
+  "level": 10,
+  "name": "Cyberplanet",
+  "description": "Firewalls, shifting grid",
+  "waves": [
+    {"time": 10.0, "type": "scout", "count": 12, "formation": "circle", "speed": 280, "hp": 4, "shoot_interval": 1.2},
+    {"time": 14.0, "type": "kamikaze", "count": 8, "formation": "swarm", "speed": 370, "hp": 4, "shoot_interval": 9.0},
+    {"time": 19.0, "type": "gunship", "count": 5, "formation": "spread", "speed": 180, "hp": 11, "shoot_interval": 1.0},
+    {"time": 23.0, "type": "diver", "count": 8, "formation": "v", "speed": 330, "hp": 4, "shoot_interval": 9.0},
+    {"time": 28.0, "type": "turret", "count": 8, "formation": "spread", "speed": 0, "hp": 10, "shoot_interval": 0.9},
+    {"time": 33.0, "type": "carrier", "count": 3, "formation": "spread", "speed": 65, "hp": 32, "shoot_interval": 1.0},
+    {"time": 33.0, "type": "kamikaze", "count": 6, "formation": "swarm", "speed": 380, "hp": 4, "shoot_interval": 9.0},
+    {"time": 36.0, "type": "scout", "count": 10, "formation": "string", "speed": 300, "hp": 4, "shoot_interval": 1.4, "side": "left"},
+    {"time": 38.0, "type": "scout", "count": 10, "formation": "zigzag", "speed": 300, "hp": 5, "shoot_interval": 1.2},
+    {"time": 38.0, "type": "diver", "count": 5, "formation": "swarm", "speed": 340, "hp": 4, "shoot_interval": 9.0},
+    {"time": 41.0, "type": "diver", "count": 6, "formation": "swarm", "speed": 350, "hp": 4, "shoot_interval": 9.0, "side": "bottom"},
+    {"time": 44.0, "type": "gunship", "count": 6, "formation": "circle", "speed": 190, "hp": 12, "shoot_interval": 0.9},
+    {"time": 47.0, "type": "scout", "count": 9, "formation": "string", "speed": 290, "hp": 5, "shoot_interval": 1.6, "side": "right"},
+    {"time": 50.0, "type": "checkpoint"},
+    {"time": 52.0, "type": "scout", "count": 14, "formation": "line", "speed": 310, "hp": 5, "shoot_interval": 1.0},
+    {"time": 56.0, "type": "kamikaze", "count": 10, "formation": "swarm", "speed": 400, "hp": 4, "shoot_interval": 9.0},
+    {"time": 56.0, "type": "diver", "count": 6, "formation": "v", "speed": 350, "hp": 5, "shoot_interval": 9.0},
+    {"time": 61.0, "type": "turret", "count": 10, "formation": "spread", "speed": 0, "hp": 12, "shoot_interval": 0.8},
+    {"time": 66.0, "type": "gunship", "count": 6, "formation": "line", "speed": 200, "hp": 13, "shoot_interval": 0.8},
+    {"time": 71.0, "type": "carrier", "count": 3, "formation": "spread", "speed": 60, "hp": 36, "shoot_interval": 1.0},
+    {"time": 71.0, "type": "kamikaze", "count": 8, "formation": "swarm", "speed": 410, "hp": 5, "shoot_interval": 9.0},
+    {"time": 74.0, "type": "mini_boss", "count": 1, "formation": "line", "speed": 100, "hp": 60, "shoot_interval": 0.8},
+    {"time": 77.0, "type": "scout", "count": 12, "formation": "circle", "speed": 320, "hp": 5, "shoot_interval": 1.0},
+    {"time": 77.0, "type": "diver", "count": 6, "formation": "swarm", "speed": 360, "hp": 5, "shoot_interval": 9.0},
+    {"time": 80.0, "type": "scout", "count": 10, "formation": "string", "speed": 310, "hp": 5, "shoot_interval": 1.4, "side": "left"},
+    {"time": 83.0, "type": "gunship", "count": 5, "formation": "v", "speed": 180, "hp": 14, "shoot_interval": 0.8},
+    {"time": 83.0, "type": "kamikaze", "count": 8, "formation": "swarm", "speed": 400, "hp": 4, "shoot_interval": 9.0, "side": "bottom"},
+    {"time": 86.0, "type": "scout", "count": 10, "formation": "string", "speed": 300, "hp": 5, "shoot_interval": 1.6, "side": "right"},
+    {"time": 90.0, "type": "checkpoint"}
+  ],
+  "boss": {
+    "name": "AI Core",
+    "part_system": "armor",
+    "parts": [
+      {"type": "armor", "style": "armor", "offset": [-40, -15], "hp": 40},
+      {"type": "armor", "style": "armor", "offset": [40, -15], "hp": 40},
+      {"type": "armor", "style": "armor", "offset": [-30, 20], "hp": 40},
+      {"type": "armor", "style": "armor", "offset": [30, 20], "hp": 40}
+    ],
+    "phases": [
+      {"hp": 220, "attacks": ["spread", "aimed", "sweep"], "bullet_speed": 340, "fire_rate": 1.1},
+      {"hp": 180, "attacks": ["circle", "barrage", "aimed"], "bullet_speed": 370, "fire_rate": 0.9},
+      {"hp": 140, "attacks": ["sweep", "circle", "barrage"], "bullet_speed": 400, "fire_rate": 0.7},
+      {"hp": 100, "attacks": ["circle", "sweep", "barrage", "aimed", "spread"], "bullet_speed": 430, "fire_rate": 0.5}
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+# Godot cache
+.godot/
+
+# Build outputs
+*.apk
+*.apk.idsig
+*.aab
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

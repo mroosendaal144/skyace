@@ -1,0 +1,40 @@
+{
+  "level": 3,
+  "name": "Capital City",
+  "description": "Skyscrapers, missile batteries",
+  "waves": [
+    {"time": 10.0, "type": "scout", "count": 5, "formation": "v", "speed": 170, "hp": 2, "shoot_interval": 2.5},
+    {"time": 15.0, "type": "gunship", "count": 2, "formation": "spread", "speed": 120, "hp": 4, "shoot_interval": 2.0},
+    {"time": 21.0, "type": "diver", "count": 4, "formation": "swarm", "speed": 230, "hp": 2, "shoot_interval": 9.0},
+    {"time": 26.0, "type": "turret", "count": 4, "formation": "spread", "speed": 0, "hp": 4, "shoot_interval": 1.8},
+    {"time": 32.0, "type": "scout", "count": 7, "formation": "zigzag", "speed": 190, "hp": 2, "shoot_interval": 2.2},
+    {"time": 35.0, "type": "scout", "count": 9, "formation": "string", "speed": 200, "hp": 2, "shoot_interval": 2.0, "side": "left"},
+    {"time": 38.0, "type": "carrier", "count": 1, "formation": "line", "speed": 80, "hp": 10, "shoot_interval": 2.0},
+    {"time": 38.0, "type": "scout", "count": 4, "formation": "v", "speed": 180, "hp": 1, "shoot_interval": 2.5},
+    {"time": 41.0, "type": "diver", "count": 4, "formation": "swarm", "speed": 240, "hp": 2, "shoot_interval": 9.0, "side": "bottom"},
+    {"time": 44.0, "type": "checkpoint"},
+    {"time": 46.0, "type": "gunship", "count": 3, "formation": "line", "speed": 130, "hp": 5, "shoot_interval": 1.6},
+    {"time": 52.0, "type": "diver", "count": 5, "formation": "v", "speed": 250, "hp": 2, "shoot_interval": 9.0},
+    {"time": 57.0, "type": "kamikaze", "count": 4, "formation": "swarm", "speed": 260, "hp": 1, "shoot_interval": 9.0},
+    {"time": 62.0, "type": "turret", "count": 5, "formation": "spread", "speed": 0, "hp": 5, "shoot_interval": 1.5},
+    {"time": 65.0, "type": "mini_boss", "count": 1, "formation": "line", "speed": 100, "hp": 22, "shoot_interval": 1.3},
+    {"time": 68.0, "type": "carrier", "count": 2, "formation": "spread", "speed": 90, "hp": 12, "shoot_interval": 1.8},
+    {"time": 71.0, "type": "scout", "count": 10, "formation": "string", "speed": 210, "hp": 2, "shoot_interval": 2.0, "side": "right"},
+    {"time": 74.0, "type": "scout", "count": 8, "formation": "line", "speed": 200, "hp": 2, "shoot_interval": 2.0},
+    {"time": 74.0, "type": "kamikaze", "count": 3, "formation": "swarm", "speed": 260, "hp": 1, "shoot_interval": 9.0, "side": "left"},
+    {"time": 77.0, "type": "scout", "count": 8, "formation": "string", "speed": 190, "hp": 2, "shoot_interval": 2.2, "side": "left"},
+    {"time": 80.0, "type": "checkpoint"}
+  ],
+  "boss": {
+    "name": "Flying Fortress",
+    "part_system": "wing",
+    "parts": [
+      {"type": "wing", "style": "wing", "offset": [-60, 10], "hp": 25, "fire_rate": 2.0, "attacks": ["aimed"]},
+      {"type": "wing", "style": "wing", "offset": [60, 10], "hp": 25, "fire_rate": 2.0, "attacks": ["aimed"]}
+    ],
+    "phases": [
+      {"hp": 120, "attacks": ["spread", "aimed", "barrage"], "bullet_speed": 270, "fire_rate": 1.5},
+      {"hp": 80, "attacks": ["circle", "sweep", "aimed"], "bullet_speed": 300, "fire_rate": 1.2}
+    ]
+  }
+}

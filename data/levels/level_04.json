@@ -1,0 +1,40 @@
+{
+  "level": 4,
+  "name": "Space Shipyard",
+  "description": "Docking cranes, half-built ships",
+  "waves": [
+    {"time": 10.0, "type": "scout", "count": 6, "formation": "line", "speed": 180, "hp": 2, "shoot_interval": 2.2},
+    {"time": 15.0, "type": "gunship", "count": 3, "formation": "v", "speed": 130, "hp": 5, "shoot_interval": 1.8},
+    {"time": 21.0, "type": "scout", "count": 4, "formation": "zigzag", "speed": 200, "hp": 3, "shoot_interval": 2.0},
+    {"time": 26.0, "type": "diver", "count": 5, "formation": "swarm", "speed": 240, "hp": 2, "shoot_interval": 9.0},
+    {"time": 31.0, "type": "carrier", "count": 1, "formation": "line", "speed": 70, "hp": 14, "shoot_interval": 1.8},
+    {"time": 31.0, "type": "scout", "count": 5, "formation": "v", "speed": 190, "hp": 2, "shoot_interval": 2.5},
+    {"time": 34.0, "type": "scout", "count": 9, "formation": "string", "speed": 210, "hp": 2, "shoot_interval": 2.0, "side": "right"},
+    {"time": 37.0, "type": "turret", "count": 4, "formation": "spread", "speed": 0, "hp": 5, "shoot_interval": 1.5},
+    {"time": 40.0, "type": "diver", "count": 4, "formation": "spread", "speed": 250, "hp": 2, "shoot_interval": 9.0, "side": "bottom"},
+    {"time": 43.0, "type": "checkpoint"},
+    {"time": 45.0, "type": "gunship", "count": 4, "formation": "line", "speed": 140, "hp": 6, "shoot_interval": 1.5},
+    {"time": 51.0, "type": "scout", "count": 8, "formation": "circle", "speed": 200, "hp": 2, "shoot_interval": 2.0},
+    {"time": 57.0, "type": "kamikaze", "count": 5, "formation": "swarm", "speed": 280, "hp": 2, "shoot_interval": 9.0},
+    {"time": 62.0, "type": "carrier", "count": 2, "formation": "spread", "speed": 80, "hp": 15, "shoot_interval": 1.6},
+    {"time": 65.0, "type": "mini_boss", "count": 1, "formation": "line", "speed": 100, "hp": 26, "shoot_interval": 1.2},
+    {"time": 68.0, "type": "diver", "count": 6, "formation": "v", "speed": 260, "hp": 3, "shoot_interval": 9.0},
+    {"time": 71.0, "type": "scout", "count": 10, "formation": "string", "speed": 220, "hp": 2, "shoot_interval": 2.0, "side": "left"},
+    {"time": 74.0, "type": "gunship", "count": 3, "formation": "spread", "speed": 120, "hp": 7, "shoot_interval": 1.4},
+    {"time": 74.0, "type": "scout", "count": 8, "formation": "string", "speed": 200, "hp": 3, "shoot_interval": 2.2, "side": "right"},
+    {"time": 77.0, "type": "kamikaze", "count": 4, "formation": "swarm", "speed": 280, "hp": 2, "shoot_interval": 9.0, "side": "bottom"},
+    {"time": 80.0, "type": "checkpoint"}
+  ],
+  "boss": {
+    "name": "Shipyard Mech",
+    "part_system": "armor",
+    "parts": [
+      {"type": "armor", "style": "armor", "offset": [-35, -10], "hp": 30},
+      {"type": "armor", "style": "armor", "offset": [35, -10], "hp": 30}
+    ],
+    "phases": [
+      {"hp": 150, "attacks": ["spread", "sweep"], "bullet_speed": 280, "fire_rate": 1.4},
+      {"hp": 100, "attacks": ["circle", "barrage", "aimed"], "bullet_speed": 310, "fire_rate": 1.1}
+    ]
+  }
+}
